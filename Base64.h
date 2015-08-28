@@ -31,6 +31,7 @@ string base64_encode(string code)
     string encode;
     ZZZ convert_number;
     int counter=0;
+    if(code.length()%6!=0)
     for(int i=code.length()%6;i<6;i++)
     {
         code+='0';
